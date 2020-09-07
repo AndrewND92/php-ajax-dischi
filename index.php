@@ -1,31 +1,45 @@
-<?php
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Php-Ajax-Dischi</title>
 
-$dischi = [
-  [
-    "poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
-    "title" => "New Jersey",
-    "author" => "Bon Jovi",
-    "genre" => "Rock",
-    "year" => "1988"
-  ],
-  [
-    "poster" => "https://images.pyramidshop.com/images/_popup/ACPPR48056.jpg",
-    "title" => "Live at Wembley 86",
-    "author" => "Queen",
-    "genre" => "Pop",
-    "year" => "1992"
-  ]
-];
-?>
-<div>
-  <p> <?php
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
 
-  foreach ($dischi as $cd) {
-   echo $cd["poster"] . "<br>" . $cd["title"] ."<hr>";
-  }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script id="template" type="text/x-handlebars-template">
+      <div class="cd">
+        <img src="" />
+
+        <h3></h3>
+        <small></small>
+        <strong></strong>
+      </div>
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <?php include "database.php" ?>;
+  </head>
 
 
-   ?> </p>
 
-</div>
+
+
+
+
+  <body>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="script.js">
+    </script>
+  </body>
+</html>
