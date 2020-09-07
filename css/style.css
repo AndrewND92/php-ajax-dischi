@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #293c47;
+}
+
+.header{
+  height: 100px;
+  width: 70%;
+  margin: 0 auto;
+  background: black;
+}
+.container{
+  width: 100%;
+}
+.cd img{
+  width: 270px;
+}
+.cd{
+  width: 100%;
+}
+.cd-container {
+  width: 100%;
+  display: flex;
+}

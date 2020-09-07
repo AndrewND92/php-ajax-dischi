@@ -18,20 +18,39 @@
       </div>
     </script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <?php include "database.php" ?>;
   </head>
-
-
-
-
-
-
-
   <body>
 
 
+    <div class="container">
+
+        <div class="header">
+        </div>
+
+        <div class="cd-container">
+
+            <?php
+              foreach ($database as $cd) {
+
+            ?>
+            <div class="cd">
+
+              <img src="<?php echo $cd['poster'] ?>">
+
+              <h3> <?php echo $cd['title'] ?> </h3>
+              <small> <?php echo $cd['author'] ?> </small>
+              <strong><?php echo $cd['year'] ?></strong>
+
+            </div>
+            <?php
+          }
+
+          ?>
+        </div>
+    </div>
 
 
 
@@ -39,7 +58,21 @@
 
 
 
-    <script type="text/javascript" src="script.js">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/script.js">
     </script>
   </body>
 </html>
